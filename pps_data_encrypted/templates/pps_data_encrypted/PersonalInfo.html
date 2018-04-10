@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %}
+    Payment info
+{% endblock %}
+
+{% block content %}
+
+    {% for field in form %}
+        {% formfield field %}
+    {% endfor %}
+
+    {% next_button %}
+
+{% endblock %}
